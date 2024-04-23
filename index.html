@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="./index.js" defer></script>
+    <title>Calculadora de IMC</title>
+</head>
+
+<body id="body">
+    <header>
+        <h1>Calculadora de IMC</h1>
+        <button id="switchTheme">Mudar Tema</button>
+    </header>
+    <section id="calculadoraSection">
+        <button id="calculadora">
+            <table>
+                <tr><td>
+                    <div>
+                        <h3>Peso em Kg:</h3>
+                        <input type="text" id="peso">
+                    </div>
+                </td></tr>
+                <tr>
+                    <td><div>
+                        <h3>Altura em cm:</h3>
+                        <input type="text" id="altura">
+                    </div></td>
+                </tr>
+                <tr><td><button onclick="calculate()" id="botao">Calcular</button></td></tr>
+                <tr><td><div id="resultadoSection">
+                    <h3>Seu IMC é: </h3>
+                    <h3 id="resultado"></h3>
+                </div></td></tr>
+            </table>
+        </button>
+    </section>
+    <div id="creditos">
+        <h4>Desenvolvido por Isaias Rodrigues</h4>
+    </div>
+</body>
+
+</html>
